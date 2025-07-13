@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EOLOS SHOP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background-color: #1a002d;
+      color: white;
+      text-align: center;
+      padding-bottom: 50px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    h1.page-title {
+      font-size: 3rem;
+      margin: 40px 0 20px;
+      color: #9b00ff;
+      text-shadow: 0 0 10px #9b00ff;
+      letter-spacing: 3px;
+    }
+
+    .social-icons {
+      font-size: 24px;
+      margin: 30px 0 25px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 26px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.4s ease;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+
+    .social-icons a i {
+      color: white;
+      transition: color 0.4s ease;
+    }
+
+    .social-icons a.active.instagram i { color: #e1306c; }
+    .social-icons a.active.youtube i { color: #FF0000; }
+    .social-icons a.active.whatsapp i { color: #25D366; }
+    .social-icons a.active.telegram i { color: #0088cc; }
+
+    .social-icons a:hover {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    .social-icons a:active {
+      transform: scale(0.95);
+      opacity: 0.9;
+    }
+
+    a:focus,
+    button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    h2 {
+      margin: 20px 0 5px;
+      font-size: 1.5rem;
+    }
+
+    .scroll-hint {
+      font-size: 0.85rem;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+
+    .slider-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .slider-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      width: 170px;
+      height: 260px;
+      background: rgba(50, 0, 79, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      scroll-snap-align: start;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s ease;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      background: rgba(77, 0, 122, 0.5);
+      transform: scale(1.05);
+    }
+
+    .card h3,
+    .card p {
+      margin-bottom: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .price {
+      margin-bottom: 10px;
+      white-space: nowrap;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      background: #9b00ff;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      min-width: 100px;
+    }
+
+    .card button {
+      background: white;
+      color: #32004f;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.15s ease;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      min-width: 100px;
+      text-align: center;
+      display: inline-block;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+
+    .card button:hover {
+      background: #eee;
+    }
+
+    .card button:active {
+      transform: scale(0.9);
+      transition: transform 0.1s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <h1 class="page-title">EOLOS SHOP</h1>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.instagram.com/eolosmodz" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@eolosxits?si=Zs64cKrcNADnTsfO" target="_blank" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://whatsapp.com/channel/0029VaoPOnzH5JLuVbN5h20h" target="_blank" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://t.me/eolosOFC" target="_blank" class="telegram" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+  </div>
+
+  <!-- Android Section -->
+  <h2>ANDROID</h2>
+  <div class="scroll-hint">← Swipe or scroll →</div>
+  <div class="slider-container">
+    <div class="card">
+      <h3>SENSI Android</h3>
+      <p>80% HS rate optimized config for Android users.</p>
+      <div class="price">$8.00</div>
+      <button class="buy-btn" data-product="SENSI Android">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Brazilian SENSI</h3>
+      <p>85% HS rate with advanced headshot control.</p>
+      <div class="price">$10.00</div>
+      <button class="buy-btn" data-product="Brazilian SENSI">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Aimbot H4X</h3>
+      <p>90% HS rate — stable for 2 months with auto-aim.</p>
+      <div class="price">$10.00</div>
+      <button class="buy-btn" data-product="Aimbot H4X (Android)">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Aimbot H4X PRO</h3>
+      <p>100% HS rate — top-tier auto lock system, 3 months.</p>
+      <div class="price">$20.00</div>
+      <button class="buy-btn" data-product="Aimbot H4X PRO (Android)">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- iPhone Section -->
+  <h2>IPHONE</h2>
+  <div class="scroll-hint">← Swipe or scroll →</div>
+  <div class="slider-container">
+    <div class="card">
+      <h3>SENSI iPhone</h3>
+      <p>80% HS rate — optimized for iPhone gameplay.</p>
+      <div class="price">$8.00</div>
+      <button class="buy-btn" data-product="SENSI iPhone">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Aimbot H4X</h3>
+      <p>90% HS rate — works smoothly on iOS for 2 months.</p>
+      <div class="price">$10.00</div>
+      <button class="buy-btn" data-product="Aimbot H4X (iPhone)">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Aimbot H4X PRO</h3>
+      <p>100% HS rate — PRO version with 3 months support.</p>
+      <div class="price">$20.00</div>
+      <button class="buy-btn" data-product="Aimbot H4X PRO (iPhone)">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Permanent Access Section -->
+  <h2>PERMANENT ACCESS</h2>
+  <div class="scroll-hint">← Swipe or scroll →</div>
+  <div class="slider-container">
+    <div class="card">
+      <h3>AIMBOT Permanent (Android)</h3>
+      <p>Lifetime aimbot access for Android devices with max precision.</p>
+      <div class="price">$25.00</div>
+      <button class="buy-btn" data-product="AIMBOT Permanent (Android)">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>AIMBOT Permanent (iPhone)</h3>
+      <p>Lifetime aimbot support for iPhone with ultra accuracy.</p>
+      <div class="price">$25.00</div>
+      <button class="buy-btn" data-product="AIMBOT Permanent (iPhone)">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Particle.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: ["#9b00ff", "#ffffff", "#4d007a"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+
+    const icons = document.querySelectorAll('.social-icons a');
+    icons.forEach(icon => {
+      icon.addEventListener('click', () => {
+        icons.forEach(i => i.classList.remove('active', 'instagram', 'youtube', 'whatsapp', 'telegram'));
+        const platform = icon.classList[0];
+        icon.classList.add('active', platform);
+      });
+    });
+
+    // WhatsApp buy button
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const product = button.getAttribute('data-product');
+        const phone = "8801602291524";
+        const message = encodeURIComponent(`Hi, I want to buy ${product}. Please provide the details.`);
+        const url = `https://wa.me/${phone}?text=${message}`;
+        window.open(url, '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>
